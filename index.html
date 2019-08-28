@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            index
+        </title>
+    </head>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript">
+    </script>
+    <script src="./canvasloading.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        window.onload = function(){
+        	$('.Loading').canvasloading();
+    	}
+    </script>
+    <body style="overflow: hidden;">
+        <div style="position:absolute;height:100%;width:100%;">
+            <div style="width:50%;height:100%;position: absolute;left:0px;top:0px;">
+                <canvas id="Loading1" height="80" class="Loading" style="position: absolute; left: calc(50% - 80px); top: calc(50% - 80px);" width="80">
+                </canvas>
+            </div>
+            <div style="width:50%;height:100%;position: absolute;right:0px;top:0px;">
+                <canvas id="Loading2" height="80" class="Loading" style="position: absolute; left: calc(50% - 80px); top: calc(50% - 80px);" width="80">
+                </canvas>
+            </div>
+        </div>
+        <div style="position: absolute;left:0px;top:0px;">
+            <button onclick="$('#Loading1').canvasloading('stop');">
+                点击暂停
+            </button>
+            <button onclick="$('#Loading1').canvasloading('start');">
+                点击开始
+            </button>
+        </div>
+        <div style="position: absolute;right:0px;top:0px;">
+            <button onclick="$('#Loading2').canvasloading('stop');">
+                点击暂停
+            </button>
+            <button onclick="$('#Loading2').canvasloading('start');">
+                点击开始
+            </button>
+        </div>
+    </body>
+</html>
