@@ -1,7 +1,7 @@
 CanvasLoading Canvas加载效果
 ===========================
 
-### Canvas加载动态效果，依赖于jQuery，可调整周期速度、帧数等，支持暂停。
+#### Canvas加载动态效果，依赖于jQuery，可调整周期速度、帧数等，支持暂停。
 
 开始使用
 -------
@@ -47,6 +47,7 @@ $('#Loading').canvasloading();
 ### Function 功能
 
 `start` - 开始播放动画。
+
 `stop` - 停止/暂停播放动画。
 
 使用方式
